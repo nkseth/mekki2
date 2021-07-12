@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         paper: {
             position: 'fixed',
-            width: 400,
+            maxWidth: 400,
+            width: '70vw',
 
             border: '2px solid #000',
             boxShadow: theme.shadows[5],

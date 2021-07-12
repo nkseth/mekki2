@@ -1,7 +1,7 @@
 import React from 'react'
 import { Grid, Typography } from '@material-ui/core'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
-import bgi from '../asserts/bgu.png'
+import bgi from '../asserts/ads2.png'
 import AppointmentBtn from '../components/bookAppointmet'
 
 const useStyles = makeStyles((theme: Theme) =>

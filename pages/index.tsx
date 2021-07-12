@@ -10,6 +10,10 @@ import CardHolder from '@src/sections/Home/cardholder';
 import Tech from '@src/sections/tech';
 import Pooper from '../src/components/popup'
 import { useEffect } from 'react';
+import Servicebox from '@src/sections/servicesBox';
+import Bookbox from '@src/sections/bookbox';
+import Coachingcall from '@src/sections/coachingcallbox';
+import Review from '@src/sections/customerreview';
 
 
 const Home: FC = () => {
@@ -25,8 +29,13 @@ const Home: FC = () => {
       <Pooper open={cookies} close={cookiesclose} />
       <Header navcolor="white" />
       <Banner />
+      <Servicebox />
       <Ourservicees />
       <CardHolder />
+
+      <Coachingcall />
+      <Review />
+      <Bookbox />
       <Tech />
       <Footer />
     </div>
