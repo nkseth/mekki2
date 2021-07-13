@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme: Theme) =>
     appbar: {
       width: '100%',
     },
-    logo: {
+    logo1: {
       maxWidth: 150,
       margin: theme.spacing(2),
       [theme.breakpoints.down('sm')]: {
@@ -47,7 +47,7 @@ const Header: React.FC<Props> = ({ navcolor }) => {
   return (
     <div className={classes.root}>
       <Link href="/">
-        <img src={Logo} className={classes.logo} alt="logo" />
+        <img src={Logo} style={{}} alt="logo" />
       </Link>
 
       <Hidden mdDown>

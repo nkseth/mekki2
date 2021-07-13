@@ -218,7 +218,7 @@ const ContactForm: React.FC = () => {
   const classes = useStyles()
   return (
     <>
-      <Grid item sm={6} container justify="center" alignItems="center">
+      <Grid item sm={6} container justifyContent="center" alignItems="center"  >
         <Card className={classes.container}>
           <Typography className={classes.mainhead}>Contact Us</Typography>
           <Box className={classes.searchbox}>
