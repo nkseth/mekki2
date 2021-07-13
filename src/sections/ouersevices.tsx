@@ -153,12 +153,12 @@ const Ourservicees: React.FC = () => {
   return (
     <div className={classes.root}>
       <Grid container className={classes.GridContainer} spacing={5}>
-        <Grid item sm={12} container justify="center" alignItems="center">
+        <Grid item sm={12} container justifyContent="center" alignItems="center">
           <Typography className={classes.mainhead} variant="h4">
             Our Service
           </Typography>
         </Grid>
-        <Grid item sm={12} container justify="center" alignItems="center" className={classes.subHead1}>
+        <Grid item sm={12} container justifyContent="center" alignItems="center" className={classes.subHead1}>
           <Typography variant="h3" className={animate ? classes.lr : classes.noaimatelr}>
             All
           </Typography>
@@ -178,7 +178,7 @@ const Ourservicees: React.FC = () => {
             Engagement
           </Typography>
         </Grid>
-        <Grid item sm={12} container justify="center" alignItems="flex-start" className={classes.subHead2}>
+        <Grid item sm={12} container justifyContent="center" alignItems="flex-start" className={classes.subHead2}>
           <Typography variant="h3" className={animate ? classes.lr2 : classes.noaimatetd}>
             for every service purchase, an amount will be done to a humanitarian organization
           </Typography>
@@ -188,7 +188,7 @@ const Ourservicees: React.FC = () => {
           sm={12}
           className={animate ? classes.imgani : classes.img}
           container
-          justify="center"
+          justifyContent="center"
           alignItems="flex-start"
         >
           <img src={bgi} alt="bgi" />

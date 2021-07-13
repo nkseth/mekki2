@@ -70,12 +70,12 @@ const Footer: React.FC = () => {
 
   return (
     <Grid container className={classes.rootGrid}>
-      <Grid item sm={12} container justify="space-between" alignItems="flex-start" style={{ padding: '7% 0' }}>
-        <Grid item container sm={5} justify="center" alignItems="center">
+      <Grid item sm={12} container justifyContent="space-between" alignItems="flex-start" style={{ padding: '7% 0' }}>
+        <Grid item container sm={5} justifyContent="center" alignItems="center">
           <img src={whitelogo} className={classes.img} alt="logo" />
           <Sociallinks />
         </Grid>
-        <Grid item container sm={2} justify="center" alignItems="flex-start" direction="column">
+        <Grid item container sm={2} justifyContent="center" alignItems="flex-start" direction="column">
           <Box p={1}>
             <Link href="/support" passHref>
               <Box className={classes.Links} style={{ color: 'white' }}>
@@ -115,7 +115,7 @@ const Footer: React.FC = () => {
             </Link>
           </Box>
         </Grid>
-        <Grid item container sm={5} justify="center" alignItems="flex-start" direction="column">
+        <Grid item container sm={5} justifyContent="center" alignItems="flex-start" direction="column">
           <Typography className={classes.contacthead}>Contact </Typography>
           <Typography className={classes.contact}>
             <FaMapMarkerAlt style={{ marginRight: '5px' }} /> 321 Pikes Place Parkway Seattle, WA 54321{' '}
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
         </Grid>
       </Grid>
 
-      <Grid container sm={12} className={classes.basebox}>
+      <Grid container className={classes.basebox}>
         <Typography className={classes.basetext}>© 2021 Mikki Company. Privacy Policy | Terms & Conditions</Typography>
       </Grid>
     </Grid>

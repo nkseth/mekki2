@@ -1,10 +1,11 @@
 import React from 'react';
 import { Grid, Box } from '@material-ui/core';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, createStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import {
     Timeline, TimelineItem, TimelineSeparator, TimelineConnector
-    , TimelineContent, TimelineDot} from "@material-ui/lab"
+    , TimelineContent, TimelineDot
+} from "@material-ui/lab"
 import p1 from "../asserts/p1.png";
 import p2 from "../asserts/p2.png";
 import p3 from "../asserts/p3.png";
@@ -14,61 +15,62 @@ import p6 from "../asserts/p6.png";
 import p7 from "../asserts/p7.png";
 import p8 from "../asserts/p8.png";
 
-const useStyles = makeStyles((theme) => ({
-    paper: {
-        padding: '6px 16px',
-    },
-    secondaryTail: {
-        backgroundColor: theme.palette.secondary.main,
-    },
-    dot: {
-        border: '20px solid darkblue',
-        background: 'linear-gradient(94.61deg, #27AAE1 11.18%, #514DCC 99.98%)',
-        width: '100px',
-        height: '100px'
-    },
-    heading: {
-        textAlign: 'center',
-        diplay: 'grid',
-        placeItems: 'center',
+const useStyles = makeStyles((theme) =>
+    createStyles({
+        paper: {
+            padding: '6px 16px',
+        },
+        secondaryTail: {
+            backgroundColor: theme.palette.secondary.main,
+        },
+        dot: {
+            border: '20px solid darkblue',
+            background: 'linear-gradient(94.61deg, #27AAE1 11.18%, #514DCC 99.98%)',
+            width: '100px',
+            height: '100px'
+        },
+        heading: {
+            textAlign: 'center',
+            diplay: 'grid',
+            placeItems: 'center',
 
-        width: '100%',
-        fontFamily: 'Roboto',
-        color: '#01246D',
-        fontWeight: 700,
-        marginTop: '20px',
-        [theme.breakpoints.down("sm")]: {
-            fontSize: '1rem'
-        }
-    },
-    content: {
-        textAlign: 'center',
-        diplay: 'grid',
-        placeItems: 'center',
+            width: '100%',
+            fontFamily: 'Roboto',
+            color: '#01246D',
+            fontWeight: 700,
+            marginTop: '20px',
+            [theme.breakpoints.down("sm")]: {
+                fontSize: '1rem'
+            }
+        },
+        content: {
+            textAlign: 'center',
+            diplay: 'grid',
+            placeItems: 'center',
 
-        width: '100%',
-        fontFamily: 'Roboto',
-        color: '#01246D',
-        fontWeight: 400,
-        marginTop: '20px',
-        [theme.breakpoints.down("sm")]: {
-            fontSize: '.5rem'
-        }
+            width: '100%',
+            fontFamily: 'Roboto',
+            color: '#01246D',
+            fontWeight: 400,
+            marginTop: '20px',
+            [theme.breakpoints.down("sm")]: {
+                fontSize: '.5rem'
+            }
 
-    },
-    image: {
-        [theme.breakpoints.down("sm")]: {
-            maxWidth: '100%'
-        }
-    },
-    maingrid: {
+        },
+        image: {
+            [theme.breakpoints.down("sm")]: {
+                maxWidth: '100%'
+            }
+        },
+        maingrid: {
 
-        padding: '10%',
-        [theme.breakpoints.down("sm")]: {
-            padding: '1%',
+            padding: '10%',
+            [theme.breakpoints.down("sm")]: {
+                padding: '1%',
+            }
         }
-    }
-}));
+    }));
 
 const CustomizedTimeline: React.FC = () => {
     const classes = useStyles();
@@ -96,16 +98,16 @@ const CustomizedTimeline: React.FC = () => {
 
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Grid container className={classes.maingrid} justify="center" alignItems="center">
-                            <Grid item container justify="center" alignItems="center">
+                        <Grid container className={classes.maingrid} justifyContent="center" alignItems="center">
+                            <Grid item container justifyContent="center" alignItems="center">
                                 <Box >
                                     <img src={item.image} className={classes.image}></img>
                                 </Box>
                             </Grid>
-                            <Grid item container sm={12}>
+                            <Grid item container >
                                 <Typography variant="h3" className={classes.heading}>{item.heading}</Typography>
                             </Grid>
-                            <Grid item container sm={12}>
+                            <Grid item container >
                                 <Typography variant="h6" className={classes.content}>{item.content}</Typography>
                             </Grid>
 

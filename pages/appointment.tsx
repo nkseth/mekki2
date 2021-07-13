@@ -8,9 +8,9 @@ import Customerreview from '../src/sections/customerreview'
 import Footer from '../src/sections/footer'
 import Tech from '../src/sections/tech'
 
-const Appointment:React.FC = () => {
+const Appointment: React.FC = () => {
   return (
-    <div style={{ background: '#EBEBEB' }}>
+    <div style={{ background: '#EBEBEB', overflowX: "hidden" }}>
       <SEO
         title="this is Degataliseauto"
         author="mekki"

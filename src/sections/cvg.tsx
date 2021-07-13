@@ -57,12 +57,12 @@ const Cvg: React.FC = () => {
   const classes = useStyles()
 
   return (
-    <Grid container justify="center" alignItems="center" style={{ marginTop: '10%' }}>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+    <Grid container justifyContent="center" alignItems="center" style={{ marginTop: '10%' }}>
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.mainhead}>CVG</Typography>
         <Typography className={classes.subhhead}>CGV – Conditions Générales de vente</Typography>
       </Grid>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.subhhead2}>PRÉAMBULE</Typography>
         <Typography className={classes.subhead}>
           Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -73,7 +73,7 @@ const Cvg: React.FC = () => {
           takimata sanctus est Lorem ipsum dolor sit amet
         </Typography>
       </Grid>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.subhhead2}>PRÉAMBULE</Typography>
         <Typography className={classes.subhead}>
           Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -84,7 +84,7 @@ const Cvg: React.FC = () => {
           takimata sanctus est Lorem ipsum dolor sit amet
         </Typography>
       </Grid>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.subhhead2}>PRÉAMBULE</Typography>
         <Typography className={classes.subhead}>
           Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -95,7 +95,7 @@ const Cvg: React.FC = () => {
           takimata sanctus est Lorem ipsum dolor sit amet
         </Typography>
       </Grid>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.subhhead2}>PRÉAMBULE</Typography>
         <Typography className={classes.subhead}>
           Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -106,7 +106,7 @@ const Cvg: React.FC = () => {
           takimata sanctus est Lorem ipsum dolor sit amet
         </Typography>
       </Grid>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.subhhead2}>PRÉAMBULE</Typography>
         <Typography className={classes.subhead}>
           Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
@@ -117,7 +117,7 @@ const Cvg: React.FC = () => {
           takimata sanctus est Lorem ipsum dolor sit amet
         </Typography>
       </Grid>
-      <Grid item sm={12} container justify="center" alignItems="flex-start" direction="column">
+      <Grid item sm={12} container justifyContent="center" alignItems="flex-start" direction="column">
         <Typography className={classes.subhhead2}>PRÉAMBULE</Typography>
         <Typography className={classes.subhead}>
           Lorem ipsum dolor sit amet, consetetur sadip scing elitr, sed diam nonumy eirmod tempor invidunt ut labore et

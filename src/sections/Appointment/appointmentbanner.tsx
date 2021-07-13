@@ -106,7 +106,7 @@ export default function Appointmentbanner() {
 
     return (
         <div className={classes.root}>
-            <Grid container justify='center' alignItems="center" className={classes.container}>
+            <Grid container justifyContent='center' alignItems="center" className={classes.container}>
 
                 <Grid item xs={12} lg={5} className={classes.bannerbg} >
                     <Box className={classes.imgbox} >

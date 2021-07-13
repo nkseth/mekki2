@@ -45,7 +45,7 @@ const CardHolder: React.FC = () => {
 
     return (
 
-        <Grid justify="center" alignItems="center" container className={classes.root}  >
+        <Grid justifyContent="center" alignItems="center" container className={classes.root}  >
 
 
             {data.map((item, index) => {

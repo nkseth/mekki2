@@ -4,7 +4,7 @@ import { createStyles, makeStyles } from '@material-ui/core/styles';
 import wavi from '../asserts/wavi.png'
 
 
-const useStyles = makeStyles(() =>
+const useStyles = makeStyles(
     createStyles({
         root: {
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles(() =>
 
             "&:hover": {
                 "& span": {
-                    animation: " $animate 1s ease-out ",
+                    animation: "$animate 1s ease-out ",
                     animationFillMode: "forwards"
                 },
                 "& #ig1": {
@@ -104,7 +104,6 @@ const useStyles = makeStyles(() =>
             zIndex: 3,
 
         },
-
         "@keyframes animate": {
             from: {
                 height: 120,

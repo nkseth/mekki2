@@ -60,12 +60,12 @@ const Coachingcall: React.FC = () => {
   return (
     <div className={classes.textcontainer}>
       <Grid container className={classes.rootGrid}>
-        <Grid item container sm={6} justify="center" alignItems="center">
+        <Grid item container sm={6} justifyContent="center" alignItems="center">
           <Typography variant="h4" className={classes.texthead}>
             Book Now your free coaching call
           </Typography>
         </Grid>
-        <Grid item container sm={6} justify="center" alignItems="center">
+        <Grid item container sm={6} justifyContent="center" alignItems="center">
           <AppointmentBtn />
         </Grid>
       </Grid>

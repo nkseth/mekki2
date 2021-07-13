@@ -32,7 +32,6 @@ const Home: FC = () => {
       <Servicebox />
       <Ourservicees />
       <CardHolder />
-
       <Coachingcall />
       <Review />
       <Bookbox />

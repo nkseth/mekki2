@@ -99,7 +99,7 @@ export default function Appointmentsub() {
 
     return (
         <div className={classes.root}>
-            <Grid container sm={12} className={classes.container}>
+            <Grid container className={classes.container}>
                 <Grid item xs={12} lg={7} className={classes.bannerbg} >
 
                     <Box className={classes.textbox}>

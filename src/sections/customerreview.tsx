@@ -41,13 +41,13 @@ const Review: React.FC = () => {
   return (
     <div className={classes.root}>
       <Grid container className={classes.GridContainer} spacing={5}>
-        <Grid item sm={12} container justify="center" alignItems="center">
+        <Grid item sm={12} container justifyContent="center" alignItems="center">
           <Typography className={classes.mainhead} variant="h4">
             Customer Review
           </Typography>
         </Grid>
 
-        <Grid item sm={12} container justify="center" alignItems="flex-start">
+        <Grid item sm={12} container justifyContent="center" alignItems="flex-start">
           <Carousel autoPlay>
             <Revi />
             <Revi />

@@ -88,8 +88,8 @@ const Aboutbannder: React.FC = () => {
 
         <Box className={classes.container} >
 
-            <Grid className={classes.textc} container sm={12} item justify="center" alignItems='center' >
-                <Grid sm={12} container item justify="center" direction="column" alignItems="center">
+            <Grid className={classes.textc} container item justifyContent="center" alignItems='center' >
+                <Grid sm={12} container item justifyContent="center" direction="column" alignItems="center">
                     <Typography className={classes.texti}>We Are Qualified & Professional</Typography>
                     <Typography className={classes.texts}>Automotive & Car workshop !</Typography>
 

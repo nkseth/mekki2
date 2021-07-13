@@ -53,15 +53,15 @@ const CardHolder: React.FC = () => {
 
     return (
 
-        <Grid justify="center" alignItems="center" container className={classes.root}  >
+        <Grid justifyContent="center" alignItems="center" container className={classes.root}  >
 
-            <Grid item sm={12} container justify="center" alignItems="center"   >
+            <Grid item sm={12} container justifyContent="center" alignItems="center"   >
                 <Typography className={classes.mainhead} variant="h4" >Strategic Coaching In 3 Key Steps</Typography>
 
             </Grid>
             {data.map((item) => {
                 return (
-                    <Grid item sm={12} lg={4} md={6} justify="center" alignItems="center" container className={classes.innerGrid} >
+                    <Grid item sm={12} lg={4} md={6} justifyContent="center" alignItems="center" container className={classes.innerGrid} >
                         <Box px={2} py={4}  >
                             <Cards subheading={item.subtitel} icons={item.icons} />
                         </Box>

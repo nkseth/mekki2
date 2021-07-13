@@ -52,7 +52,7 @@ const Tech: React.FC<Props> = (props) => {
     return (
 
 
-        <Grid container justify="space-around" alignItems="center" spacing={2} className={classes.container} direction={props.reverse ? "row-reverse" : "row"} >
+        <Grid container justifyContent="space-around" alignItems="center" spacing={2} className={classes.container} direction={props.reverse ? "row-reverse" : "row"} >
 
             <Grid item sm={6}>
                 <Typography className={classes.text1}>

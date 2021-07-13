@@ -78,7 +78,7 @@ const Tech: React.FC = () => {
       </Typography>
 
       <Card className={classes.root}>
-        <Grid container justify="space-around" alignItems="center">
+        <Grid container justifyContent="space-around" alignItems="center">
           <Grid item>
             <svg id="svgi" width="150" height="97" viewBox="0 0 150 97" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
