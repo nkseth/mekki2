@@ -1,5 +1,5 @@
 import React from 'react'
-import { createStyles, makeStyles } from '@material-ui/core/styles'
+import { createStyles, makeStyles } from '@material-ui/styles'
 import Header from '../components/header'
 import Path3 from './svgs/path3'
 
