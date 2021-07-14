@@ -35,7 +35,7 @@ const AlertDialog: React.FC<Props> = (props) => {
                         <Button onClick={handleClose} style={{ color: 'white' }}>Close</Button>
                     </DialogTitle>
                     <DialogContentText id="alert-dialog-description">
-                        <ReactPlayer url={props.url} />
+                        <ReactPlayer url={props.url} style={{ maxWidth: '100%' }} />
                     </DialogContentText>
                 </DialogContent>
 

@@ -13,7 +13,10 @@ const useStyles = makeStyles((theme: Theme) =>
             width: '100vw',
 
 
-            padding: "5% 3%"
+            padding: "0% 3%",
+            [theme.breakpoints.down("sm")]: {
+                padding: "7% 3%",
+            }
         },
 
         logo: {
@@ -106,7 +109,7 @@ export default function Appointmentbanner() {
 
     return (
         <div className={classes.root}>
-            <Grid container justifyContent='center' alignItems="center" className={classes.container}>
+            <Grid container justifyContent='center' alignItems="flex-start" className={classes.container}>
 
                 <Grid item xs={12} lg={5} className={classes.bannerbg} >
                     <Box className={classes.imgbox} >
@@ -143,7 +146,7 @@ export default function Appointmentbanner() {
                 <Grid item lg={7} sm={12} style={{ width: '100%' }}>
 
                     {/*  this is the i frame of harmonizely*/}
-                    <iframe src="https://harmonizely.com/nanaksethh?view=compact" style={{ width: "100%", height: "100%", minHeight: '40vh', padding: '0', margin: 0 }} frameBorder="0" ></iframe>
+                    <iframe src="https://harmonizely.com/nanaksethh?view=compact" style={{ width: "100%", height: "100vh", minHeight: '50vh', padding: '0', margin: 0 }} frameBorder="0" ></iframe>
                 </Grid>
             </Grid>
 

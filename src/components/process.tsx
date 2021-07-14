@@ -87,8 +87,8 @@ const CustomizedTimeline: React.FC = () => {
     return (
         <Timeline align="alternate">
 
-            {data.map((item) => (
-                <TimelineItem>
+            {data.map((item, index) => (
+                <TimelineItem key={index}>
 
                     <TimelineSeparator>
                         <TimelineConnector style={{ background: 'transparent', borderLeft: '10px dashed darkblue' }} />

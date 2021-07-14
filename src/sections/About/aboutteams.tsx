@@ -60,9 +60,9 @@ const AboutTeam: React.FC = () => {
 
             </Grid>
 
-            {data.map((item) => {
+            {data.map((item, index) => {
                 return (
-                    <Grid item sm={12} lg={4} md={6} justifyContent="center" alignItems="center" container className={classes.innerGrid} >
+                    <Grid item key={index} sm={12} lg={4} md={6} justifyContent="center" alignItems="center" container className={classes.innerGrid} >
 
                         <Box px={2} py={4}  >
                             <Cards title={item.title} subheading={item.subtitel} icons={item.icons} />

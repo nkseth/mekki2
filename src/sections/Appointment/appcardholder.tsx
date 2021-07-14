@@ -59,9 +59,9 @@ const CardHolder: React.FC = () => {
                 <Typography className={classes.mainhead} variant="h4" >Strategic Coaching In 3 Key Steps</Typography>
 
             </Grid>
-            {data.map((item) => {
+            {data.map((item, index) => {
                 return (
-                    <Grid item sm={12} lg={4} md={6} justifyContent="center" alignItems="center" container className={classes.innerGrid} >
+                    <Grid key={index} item sm={12} lg={4} md={6} justifyContent="center" alignItems="center" container className={classes.innerGrid} >
                         <Box px={2} py={4}  >
                             <Cards subheading={item.subtitel} icons={item.icons} />
                         </Box>

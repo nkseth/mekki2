@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import Group from '../../asserts/Group.png'
-
+import Videomodel from '../../components/videomodel'
 const useStyles = makeStyles(() =>
     createStyles({
         root: {
@@ -23,10 +23,17 @@ const useStyles = makeStyles(() =>
 
 const Path3: React.FC = () => {
     const classes = useStyles();
+    const [videomodel, setvideomodel] = useState(false)
+    const close = () => {
+        setvideomodel(false)
+    }
+    const openi = () => {
+        setvideomodel(true)
+    }
     return (
         <div className={classes.root}>
 
-
+            <Videomodel url="https://www.youtube.com/watch?v=tcmNo-cdCPU" open={videomodel} close={close} />
             <svg width="100%" height="100%" viewBox="200 1000 1950 1350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <g filter="url(#filter0_d)">
                     <path d="M219.591 2049.33C219.591 2049.33 729.228 1866.93 1002.86 1989.97C1276.5 2113.01 1769.35 2516.11 2136.8 1815.15C2504.25 1114.19 2401.89 908.885 2401.89 908.885L2110.08 785.968L1308.74 841.604L811.469 847.326L502.379 840.538L25.4091 896.639L110.863 1364.55L152.317 2084.47L219.591 2049.33Z" fill="#20368F" />
@@ -48,7 +55,7 @@ const Path3: React.FC = () => {
                 </mask>
                 <g mask="url(#mask1)">
                     <path opacity="0.49" d="M833 1042.72C833 1020.63 850.909 1002.72 873 1002.72H2757C2779.09 1002.72 2797 1020.63 2797 1042.72V2374.72C2797 2396.81 2779.09 2414.72 2757 2414.72H873C850.909 2414.72 833 2396.81 833 2374.72V1042.72Z" fill="#000B4F" />
-                    <path d="M1643.54 1665.35C1646.88 1667.27 1646.89 1672.08 1643.56 1674.01L1541.77 1733.06C1538.44 1735 1534.27 1732.6 1534.26 1728.75L1534.01 1611.07C1534 1607.22 1538.17 1604.81 1541.5 1606.72L1643.54 1665.35Z" fill="white" />
+                    <path onClick={openi} d="M1643.54 1665.35C1646.88 1667.27 1646.89 1672.08 1643.56 1674.01L1541.77 1733.06C1538.44 1735 1534.27 1732.6 1534.26 1728.75L1534.01 1611.07C1534 1607.22 1538.17 1604.81 1541.5 1606.72L1643.54 1665.35Z" fill="white" />
                 </g>
                 <defs>
                     <filter id="filter0_d" x="0.409058" y="763.969" width="2439.59" height="1481.12" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">

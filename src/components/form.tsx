@@ -241,7 +241,7 @@ const ContactForm: React.FC = () => {
                 <input className={classes.captainput} placeholder="Captcha" />
               </Box>
             </Grid>
-            <Grid sm={12} md={12} lg={6}>
+            <Grid item sm={12} md={12} lg={6}>
               <Box className={classes.captatextbox}>
                 <Typography className={classes.captatext}>7272782</Typography>
               </Box>

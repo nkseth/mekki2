@@ -1,8 +1,11 @@
 import React from 'react'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography, Hidden } from '@material-ui/core'
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles'
 import Carousel from 'react-material-ui-carousel'
-import Revi from '../components/reviews'
+import Revi from '../components/Reviews/reviews'
+import Boxtype1 from '@src/components/Reviews/boxtype1'
+import Boxtype2 from '@src/components/Reviews/boxtype2'
+import Boxtype3 from '@src/components/Reviews/boxtype3'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -32,6 +35,9 @@ const useStyles = makeStyles((theme: Theme) =>
     GridContainer: {
       width: '100%',
     },
+    cour: {
+      minHeight: 400
+    }
   })
 )
 
@@ -48,13 +54,51 @@ const Review: React.FC = () => {
         </Grid>
 
         <Grid item sm={12} container justifyContent="center" alignItems="flex-start">
-          <Carousel autoPlay>
-            <Revi />
-            <Revi />
-            <Revi />
-            <Revi />
-            <Revi />
-          </Carousel>
+          <Hidden mdDown>
+            <Carousel autoPlay >
+
+
+              <Revi boxt1={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt11={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt111={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt1111={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt2={{ url: "https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" }}
+                boxt22={{ url: "https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" }}
+                boxt222={{ url: "https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" }}
+                boxt3={{ url: "https://ia600207.us.archive.org/29/items/MLKDream/MLKDream_64kb.mp3", name: "Nanak seth", aurl: "" }}
+                boxt33={{ url: "https://ia600207.us.archive.org/29/items/MLKDream/MLKDream_64kb.mp3", name: "Nanak seth", aurl: "" }}
+              />
+
+              <Revi boxt1={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt11={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt111={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt1111={{ url: "", name: "Nanak Seth", text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " }}
+                boxt2={{ url: "https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" }}
+                boxt22={{ url: "https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" }}
+                boxt222={{ url: "https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" }}
+                boxt3={{ url: "https://ia600207.us.archive.org/29/items/MLKDream/MLKDream_64kb.mp3", name: "Nanak seth", aurl: "" }}
+                boxt33={{ url: "https://ia600207.us.archive.org/29/items/MLKDream/MLKDream_64kb.mp3", name: "Nanak seth", aurl: "" }}
+              />
+
+
+            </Carousel>
+          </Hidden>
+          <Hidden smUp>
+            <Carousel autoPlay >
+              <Boxtype1 url="" name="Nanak Seth" text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut " />
+
+              <Boxtype2 url="https://www.youtube.com/watch?v=y_RHQ4mBDKA&list=RDbbbgGRsCGv8&index=6&ab_channel=T-Series" />
+
+              <Boxtype3 url="https://ia600207.us.archive.org/29/items/MLKDream/MLKDream_64kb.mp3" name="Nanak seth" aurl="" />
+
+
+
+
+
+
+            </Carousel>
+          </Hidden>
+
         </Grid>
       </Grid>
     </div>

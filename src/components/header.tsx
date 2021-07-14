@@ -47,13 +47,13 @@ const Header: React.FC<Props> = ({ navcolor }) => {
   return (
     <div className={classes.root}>
       <Link href="/">
-        <img src={Logo} style={{}} alt="logo" />
+        <img src={Logo} className={classes.logo1} alt="logo" />
       </Link>
 
       <Hidden mdDown>
         <Navoptions navcolor={navcolor} />
       </Hidden>
-      <Hidden smUp>
+      <Hidden mdUp>
         <Drawer navcolor="darkblue" />
       </Hidden>
 

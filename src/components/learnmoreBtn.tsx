@@ -1,8 +1,8 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-import Link from 'next/link'
+import Link from 'next/link';
 import wave from "../asserts/wave4.png";
-import { Box } from '@material-ui/core'
+import { Box } from '@material-ui/core';
 const useStyles = makeStyles(() =>
     createStyles({
 
