@@ -3,6 +3,7 @@ import Dialog from '@material-ui/core/Dialog';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import ReactPlayer from 'react-player'
+import { DialogTitle, Button } from '@material-ui/core';
 
 interface Props {
     close: () => void
@@ -30,6 +31,9 @@ const AlertDialog: React.FC<Props> = (props) => {
 
             >
                 <DialogContent style={{ background: 'black', padding: 0 }}>
+                    <DialogTitle>
+                        <Button onClick={handleClose} style={{ color: 'white' }}>Close</Button>
+                    </DialogTitle>
                     <DialogContentText id="alert-dialog-description">
                         <ReactPlayer url={props.url} />
                     </DialogContentText>
