@@ -52,7 +52,7 @@ const SimpleModal: React.FC<Props> = (props) => {
             <div>Want somecookies get some</div>
             <div className={classes.action}>
 
-                <Button className={classes.button}>ALLOW</Button>
+                <Button className={classes.button} onClick={close}>ALLOW</Button>
                 <Button className={classes.button} onClick={close}>CANCEL</Button>
             </div>
         </div>

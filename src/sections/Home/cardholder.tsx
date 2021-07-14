@@ -33,12 +33,12 @@ const useStyles = makeStyles((theme: Theme) =>
 );
 const CardHolder: React.FC = () => {
 
-    const data = [{ title: "Facebook or Instagram Ads", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: instabook, link: "Services#facebookads" },
-    { title: "Seo", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: trendingicon, link: "Services#seo" },
-    { title: "Website", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: globe, link: "Services#websites" },
-    { title: "Youtube and google Ads", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: youword, link: "Services#youtubeandgoogleads" },
-    { title: "Google my Business", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: gshop, link: "Services#googlemybusiness" },
-    { title: "Mobile Apps", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: andios, link: "Services#mobileapps" },
+    const data = [{ title: "Facebook or Instagram Ads", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: instabook, link: "services#facebookads" },
+    { title: "Seo", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: trendingicon, link: "services#seo" },
+    { title: "Website", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: globe, link: "services#websites" },
+    { title: "Youtube and google Ads", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: youword, link: "services#youtubeandgoogleads" },
+    { title: "Google my Business", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: gshop, link: "services#googlemybusiness" },
+    { title: "Mobile Apps", subtitel: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut', icons: andios, link: "services#mobileapps" },
 
     ]
     const classes = useStyles();

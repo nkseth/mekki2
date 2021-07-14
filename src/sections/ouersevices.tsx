@@ -149,6 +149,8 @@ const Ourservicees: React.FC = () => {
         setanimate(false)
       }
     })
+
+
   }, [])
   return (
     <div className={classes.root}>
